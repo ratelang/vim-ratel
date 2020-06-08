@@ -1,9 +1,9 @@
 " Vim syntax file
-" Language:             Vyper (https://github.com/ethereum/vyper)
+" Language:             Vyper (https://github.com/ratelang/ratel)
 " Author:               chgue (https://github.com/chgue)
-" URL:                  https://github.com/chgue/vim-viper
-" Last Change:          2019-06-06
-" Filenames:            *.vy
+" URL:                  https://github.com/ratelang/vim-ratel
+" Last Change:          2020-06-08
+" Filenames:            *.rl
 
 if exists("b:current_syntax")
   finish
@@ -29,6 +29,9 @@ syn keyword vyperTodo TODO FIXME NOTE contained
 
 "Functions
 syn match vyperFunction "[a-zA-Z_][a-zA-Z0-9_]*" display contained
+
+"mpc (ratelang/ratel)
+syn keyword mpcStatement mpc async await
 
 "Operators
 syn match vyperOperator "\(=\|+\|-\|*\|\/\|%\|!\|<\|>\)"
@@ -80,3 +83,6 @@ hi link vyperBuiltin Function
 hi link vyperStringError Error
 hi link vyperString String
 hi link vyperTodo todo
+
+"mpc (ratelang/ratel)
+hi link mpcStatement Statement

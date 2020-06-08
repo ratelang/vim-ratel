@@ -1,8 +1,8 @@
 #!/usr/bin/sh
 
 mkdir -p ~/.vim/syntax/
-mkdir -p ~/.vim/ftdetect/ 
+mkdir -p ~/.vim/ftdetect/
 
-curl -L "https://github.com/jacqueswww/vim-vyper/raw/master/syntax/vyper.vim" -o ~/.vim/syntax/vyper.vim
-curl -L "https://github.com/jacqueswww/vim-vyper/raw/master/ftdetect/vyper.vim" -o ~/.vim/ftdetect/vyper.vim
+curl -L "https://github.com/ratelang/vim-ratel/raw/master/syntax/ratel.vim" -o ~/.vim/syntax/ratel.vim
+curl -L "https://github.com/ratelang/vim-ratel/raw/master/ftdetect/ratel.vim" -o ~/.vim/ftdetect/ratel.vim
 
